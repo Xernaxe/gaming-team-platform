@@ -2,7 +2,12 @@
 import Image from "next/image";
 import React from "react";
 
-const BurgerMenu = ({ setIsBurgerMenuOpen, isBurgerMenuOpen }: any) => {
+interface BurgerMenuProps {
+  setIsBurgerMenuOpen: React.Dispatch<React.SetStateAction<boolean>>;
+  isBurgerMenuOpen: boolean;
+}
+
+const BurgerMenu: React.FC<BurgerMenuProps> = ({ setIsBurgerMenuOpen, isBurgerMenuOpen }) => {
 	const toggleBurgerMenu = () => {
 		setIsBurgerMenuOpen(!isBurgerMenuOpen);
 	};

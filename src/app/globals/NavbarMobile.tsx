@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import React, { useState } from "react";
+import React, { SetStateAction, useState } from "react";
 import BurgerMenu from "./Burgermenu";
 import INavLinks from "../_types/INavLinks";
 import Image from "next/image";
@@ -10,7 +10,7 @@ interface NavbarMobileProps {
 	navLinks: INavLinks[];
 }
 export const NavbarMobile: React.FC<NavbarMobileProps> = ({ navLinks }) => {
-	const [isBurgerMenuOpen, setIsBurgerMenuOpen] = useState(false);
+	const [isBurgerMenuOpen, setIsBurgerMenuOpen] = useState<boolean>(false);
 
 	return (
 		<nav className="desktop:hidden flex justify-between relative items-center">
@@ -24,9 +24,9 @@ export const NavbarMobile: React.FC<NavbarMobileProps> = ({ navLinks }) => {
 				<>
 					<div className="absolute top-1/2 left-1/2 translate-y-1/2 -translate-x-1/2">
 						<ul className="flex flex-col gap-6">
-							{navLinks.map((link: any) => {
+							{navLinks.map((link, index) => {
 								return (
-									<li>
+									<li key={index}>
 										<Link href={link.href}>
 											<p className=" text-center font-oxanium text-xl">{link.name}</p>
 										</Link>
