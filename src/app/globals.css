@@ -16,4 +16,9 @@
 
 body {
 	background-color: #040d17;
+	padding: clamp(1.25rem, 4.7vw, 1.875rem);
 }
+
+/* @media screen and (min-width: ) {
+	
+} */
