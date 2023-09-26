@@ -1,6 +1,7 @@
 import React from "react";
 import { NavbarMobile } from "./NavbarMobile";
 import INavLinks from "../_types/INavLinks";
+import { NavbarDesktop } from "./NavbarDesktop";
 
 export const Header = () => {
 	const navLinks: INavLinks[] = [
@@ -14,6 +15,7 @@ export const Header = () => {
 
 	return (
 		<header>
+			<NavbarDesktop navLinks={navLinks}/>
 			<NavbarMobile navLinks={navLinks} />
 		</header>
 	);

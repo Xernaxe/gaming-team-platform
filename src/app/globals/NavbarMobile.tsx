@@ -12,7 +12,7 @@ export const NavbarMobile: React.FC<NavbarMobileProps> = ({ navLinks }) => {
 	const [isBurgerMenuOpen, setIsBurgerMenuOpen] = useState(false);
 
 	return (
-		<nav className="flex justify-between relative items-center">
+		<nav className="desktop:hidden flex justify-between relative items-center">
 			<Link href={"#"}>
 				<img src="./images/logo.svg" className="w-[clamp(3.25rem,_10.5vw,_4.875rem)]"></img>
 			</Link>

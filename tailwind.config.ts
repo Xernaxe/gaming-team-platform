@@ -25,7 +25,8 @@ const config: Config = {
 			screens: {
 				"mobile": "440px",
 				"tablet": "765px",
-				"desktop": "1024px"
+				"desktop": "1024px",
+				"desktopL": "1440px"
 			},
 			fontFamily: {
 				"inter": ["Inter", ...defaultTheme.fontFamily.sans],
