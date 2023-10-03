@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import "tailwindcss/tailwind.css";
 import { NavbarMobile } from "./globals/NavbarMobile";
 import { Header } from "./globals/Header";
+import { BurgerMenuProvider } from "./_providers/BurgermenuContext";
 
 export const metadata: Metadata = {
 	title: "Create Next App",
@@ -12,11 +13,13 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
 	return (
 		<html lang="en">
-			<body>
-				<Header/>
-				<main>{children}</main>
-				<footer></footer>
-			</body>
+			<BurgerMenuProvider>
+				<body>
+					<Header />
+					<main>{children}</main>
+					<footer></footer>
+				</body>
+			</BurgerMenuProvider>
 		</html>
 	);
 }

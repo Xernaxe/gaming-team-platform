@@ -1,6 +1,6 @@
- type NavLink = {
-  name: string;
-  href: string;
+type NavLink = {
+	name: string;
+	href: string;
 };
 
-export default NavLink
+export default NavLink;

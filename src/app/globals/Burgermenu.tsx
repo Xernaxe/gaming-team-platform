@@ -1,13 +1,11 @@
 "use client";
 import Image from "next/image";
-import React from "react";
+import React, { createContext, useContext } from "react";
+import { useBurgerMenu } from "../_providers/BurgermenuContext";
 
-interface BurgerMenuProps {
-  setIsBurgerMenuOpen: React.Dispatch<React.SetStateAction<boolean>>;
-  isBurgerMenuOpen: boolean;
-}
+const BurgerMenu = () => {
+	const { isBurgerMenuOpen, setIsBurgerMenuOpen } = useBurgerMenu();
 
-const BurgerMenu: React.FC<BurgerMenuProps> = ({ setIsBurgerMenuOpen, isBurgerMenuOpen }) => {
 	const toggleBurgerMenu = () => {
 		setIsBurgerMenuOpen(!isBurgerMenuOpen);
 	};
@@ -15,10 +13,16 @@ const BurgerMenu: React.FC<BurgerMenuProps> = ({ setIsBurgerMenuOpen, isBurgerMe
 	return (
 		<div className="burgermenu" onClick={toggleBurgerMenu}>
 			{!isBurgerMenuOpen && (
-					<Image className="w-[clamp(2rem,_5.3vw,_2.5rem)] h-[clamp(2rem,_5.3vw,_2.5rem)]" src="./images/burgermenu.svg" alt="OPEN" />
+				<Image
+					width={32}
+					height={32}
+					className="w-[clamp(2rem,_5.3vw,_2.5rem)] h-[clamp(2rem,_5.3vw,_2.5rem)]"
+					src="./images/burgermenu.svg"
+					alt="OPEN"
+				/>
 			)}
 			{isBurgerMenuOpen && (
-				<Image src="./images/closemenu.svg" alt="CLOSE" />
+				<Image width={24} height={24} src="./images/closemenu.svg" alt="CLOSE" />
 			)}
 		</div>
 	);

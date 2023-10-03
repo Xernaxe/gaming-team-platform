@@ -15,7 +15,7 @@ export const Header = () => {
 
 	return (
 		<header>
-			<NavbarDesktop navLinks={navLinks}/>
+			<NavbarDesktop navLinks={navLinks} />
 			<NavbarMobile navLinks={navLinks} />
 		</header>
 	);
