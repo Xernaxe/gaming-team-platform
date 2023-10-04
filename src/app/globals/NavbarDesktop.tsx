@@ -9,9 +9,9 @@ interface NavbarDesktopProps {
 
 export const NavbarDesktop: React.FC<NavbarDesktopProps> = ({ navLinks }) => {
 	const navFirst3 = navLinks.slice(0, 3);
-	const navLast3 = navLinks.slice(0, navLinks.length);
+	const navLast3 = navLinks.slice(3, navLinks.length);
 	return (
-		<nav className=" max-[1023px]:hidden flex items-center justify-start gap-0 desktopL:justify-center desktopL:gap-[clamp(2rem,_4.7vw,_6rem)]">
+		<nav className=" max-[1023px]:hidden flex items-center z-20 relative justify-start gap-0 desktopL:justify-center desktopL:gap-[clamp(2rem,_4.7vw,_6rem)]">
 			<ul className="flex  gap-10 items-center justify-center desktopL:order-1 order-2 ml-auto mr-10 desktopL:m-0">
 				{navFirst3.map((link, index) => {
 					return (

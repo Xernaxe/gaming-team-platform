@@ -1,54 +1,63 @@
-import Link from "next/link";
-import React from "react";
-import { SkewedButton } from "../globals/SkewedButton";
-import Image from "next/image";
-import { HeroImg } from "../globals/HeroImg";
+import Link from 'next/link';
+import React from 'react';
+import { SkewedButton } from '../globals/SkewedButton';
+import Image from 'next/image';
+import { HeroImg } from '../globals/HeroImg';
 
 export const Hero = () => {
 	return (
 		<>
-			<section className="hero | flex flex-col gap-[3.125rem] relative pb-10 w-full tablet:flex-row tablet:gap-0 tablet:justify-between tablet:py-8 tablet:items-center">
-				<div className="mt-[3.125rem] z-20 tablet:mt-0 tablet:w-[50%]">
-					<h1 className="font-oxanium text-2xl font-semibold [word-spacing:0.5rem] leading-loose mb-6 tablet:text-[1.75rem] tablet:[word-spacing:normal]">
-						Welcome to the{" "}
-						<span className=" text-greenCyan font-[inherit] text-2xl font-semibold tablet:text-[1.75rem]">Esports</span>{" "}
-						<span className="font-bold text-[2rem] font-[inherit] leading-none tablet:text-5xl tablet:font-semibold">Multiverse</span>
+			<section className='hero | flex flex-col gap-[3.125rem] relative pb-10 w-full tablet:flex-row tablet:justify-center tablet:py-8 tablet:items-center tablet:gap-9 desktop:gap-[4.83rem] desktop:pb-0'>
+				<div className='mt-[3.125rem] z-20 tablet:mt-0'>
+					<h1 className='font-oxanium text-2xl font-semibold [word-spacing:0.5rem] leading-loose  tablet:text-[clamp(1.75rem,3.4vw,2.1rem)] tablet:[word-spacing:normal] desktop:text-[clamp(1.75rem,3.4vw,3rem)]'>
+						Welcome to the{' '}
+						<span className=' text-greenCyan font-[inherit] text-2xl font-semibold tablet:text-[clamp(1.75rem,3.4vw,2.1rem)] desktop:text-[clamp(1.75rem,3.4vw,3rem)]'>
+							Esports
+						</span>{' '}
 					</h1>
+					<h2 className='font-bold text-[2rem] font-[oxanium] leading-none mb-6 tablet:text-5xl tablet:font-semibold desktop:text-[clamp(3rem,4.5vw,4rem)]'>
+						Multiverse
+					</h2>
 
-					<SkewedButton link={"https://google.com"} text="Join Tournament" width="large" />
+					<SkewedButton
+						link={'https://google.com'}
+						text='Join Tournament'
+						width='large'
+					/>
 				</div>
 
-				<div className="flex justify-center flex-wrap gap-x-6 z-20 ">
-					<div className="flex flex-col gap-y-10">
+					{/* @TODO: CHANGE PX TO RESPONSIVE */}
+				<div className='flex justify-center flex-wrap gap-x-6 z-20 desktop:mt-[3%] desktop:h-[573px] desktop:overflow-hidden'>  
+					<div className='flex flex-col gap-y-10'>
 						<Image
-							className="object-cover w-[clamp(9.6875rem,_10vw,_15rem)] h-[10.5rem] rounded"
+							className='object-cover w-[clamp(9.6875rem,_10vw,_15rem)] tablet:w-[clamp(9.6875rem,_20.1vw,_16.875rem)] tablet:h-[clamp(10.5rem,_21vw,_18.375rem)] h-[10.5rem] rounded'
 							width={155}
 							height={168}
-							src="/images/cs-go.png"
-							alt="CS:GO"
+							src='/images/cs-go.png'
+							alt='CS:GO'
 						/>
 						<Image
-							className="object-cover w-[clamp(9.6875rem,_10vw,_15rem)] h-[10.5rem] rounded"
+							className='object-cover w-[clamp(9.6875rem,_10vw,_15rem)] tablet:w-[clamp(9.6875rem,_20.1vw,_16.875rem)] tablet:h-[clamp(10.5rem,_21vw,_18.375rem)] h-[10.5rem] rounded'
 							width={155}
 							height={168}
-							src="/images/fortnite.png"
-							alt="Fortnite"
+							src='/images/fortnite.png'
+							alt='Fortnite'
 						/>
 					</div>
-					<div className="flex flex-col gap-y-10 mt-[0.875rem]">
+					<div className='flex flex-col gap-y-10 mt-[0.875rem] desktop:mt-[1.6875rem]'>
 						<Image
-							className="object-cover w-[clamp(9.6875rem,_10vw,_15rem)] h-[10.5rem] rounded"
+							className='object-cover w-[clamp(9.6875rem,_10vw,_15rem)] tablet:w-[clamp(9.6875rem,_20.1vw,_16.875rem)] tablet:h-[clamp(10.5rem,_21vw,_18.375rem)] h-[10.5rem] rounded'
 							width={155}
 							height={168}
-							src="/images/pubg.png"
-							alt="PUBG"
+							src='/images/pubg.png'
+							alt='PUBG'
 						/>
 						<Image
-							className="object-cover w-[clamp(9.6875rem,_10vw,_15rem)] h-[10.5rem] rounded"
+							className='object-cover w-[clamp(9.6875rem,_10vw,_15rem)] tablet:w-[clamp(9.6875rem,_20.1vw,_16.875rem)] tablet:h-[clamp(10.5rem,_21vw,_18.375rem)] h-[10.5rem] rounded'
 							width={155}
 							height={168}
-							src="/images/valorant.png"
-							alt="Valorant"
+							src='/images/valorant.png'
+							alt='Valorant'
 						/>
 					</div>
 				</div>
