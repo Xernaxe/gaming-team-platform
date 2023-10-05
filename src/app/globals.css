@@ -21,13 +21,12 @@ body {
 
 @media screen and (min-width: 768px) {
 	body {
-		padding: 1.25rem clamp(2.5rem, 5vw, 10.62rem);
+		padding: 1.25rem clamp(2.5rem, 5vw, 10.62rem)
 	}
 }
 
-.hero-image {
+@media screen and (min-width: 1440px){
+	body{
+		padding: 1.25rem 8.44rem;
+	}
 }
-
-/* @media screen and (min-width: ) {
-	
-} */

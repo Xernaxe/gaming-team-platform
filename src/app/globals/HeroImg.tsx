@@ -8,7 +8,7 @@ export const HeroImg = () => {
 
 	return (
 		<div
-			className={`hero-image | absolute -left-[clamp(1.25rem,_4.7vw,_1.875rem)] w-screen max-w-[100vw] top-0 h-[calc(100%+6rem)] -translate-y-[6rem] z-10 overflow-hidden tablet:-left-[clamp(2.5rem,_5vw,_10.62rem)] desktop:-translate-y-[9rem] desktop:h-[calc(100%+9rem)]   ${
+			className={`hero-image | absolute -left-[clamp(1.25rem,_4.7vw,_1.875rem)] w-screen max-w-[100vw] top-0 h-[calc(100%+6rem)] -translate-y-[6rem] z-10 overflow-hidden tablet:-left-[clamp(2.5rem,_5vw,_10.62rem)] desktop:-translate-y-[9rem] desktop:h-[calc(100%+9rem)] desktopL:-left-[8.44rem]   ${
 				isBurgerMenuOpen ? 'z-40' : ''
 			}`}
 		>

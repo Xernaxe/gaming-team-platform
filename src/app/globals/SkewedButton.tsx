@@ -12,7 +12,7 @@ export const SkewedButton = ({ link, text, width }: ISkewedButton) => {
 		<Link
 			href={link}
 			className={
-				(width === "large" ? "w-[14.125rem] desktop:w-[14.75rem] bg-gradient-buttonL" : "w-[11.25rem] desktop:w-[11.6875rem]") +
+				(width === "large" ? "w-[14.125rem] desktop:w-[14.75rem] bg-gradient-buttonL" : "w-[11.25rem] desktop:w-[11.6875rem] bg-dBlue") +
 				` flex justify-center items-center skew-x-[-10deg] h-14`
 			}
 		>
