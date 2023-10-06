@@ -4,6 +4,7 @@ import Image from 'next/image';
 import { AboutUsContentMobile } from './AboutUsContentMobile';
 import { IAboutTournamentCard } from '../_types/IAboutTournamentCard';
 import { AboutUsContentDesktop } from './AboutUsContentDesktop';
+import { SectionWrapper } from '../globals/SectionWrapper';
 
 export const AboutUs = () => {
 	const aboutTournamentsArray: IAboutTournamentCard[] = [
@@ -13,7 +14,7 @@ export const AboutUs = () => {
 	];
 
 	return (
-		<section className='mt-[5.375rem] mb-20 tablet:mt-[6.25rem] desktopL:mt-[10rem]'>
+		<SectionWrapper>
 			<SectionHeader title='About Us' />
 			<div className=' max-w-[calc(100%_-_1.1rem)] m-auto flex flex-col items-center tablet:flex-row tablet:flex-wrap tablet:gap-x-[2.5rem] tablet:items-start tablet:max-w-[calc(100%_-_0.5rem)] desktop:flex-row desktop:flex-nowrap desktop:gap-x-16 desktopL:px-[2.19rem]'>
 				<Image
@@ -27,6 +28,6 @@ export const AboutUs = () => {
 				<AboutUsContentDesktop aboutTournaments={aboutTournamentsArray} />
 				<AboutUsContentMobile aboutTournaments={aboutTournamentsArray} />
 			</div>
-		</section>
+		</SectionWrapper>
 	);
 };
