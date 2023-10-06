@@ -4,6 +4,7 @@ import 'tailwindcss/tailwind.css';
 import { NavbarMobile } from './globals/NavbarMobile';
 import { Header } from './globals/Header';
 import { BurgerMenuProvider } from './_providers/BurgermenuContext';
+import { Footer } from './globals/Footer';
 
 export const metadata: Metadata = {
 	title: 'Create Next App',
@@ -23,7 +24,7 @@ export default function RootLayout({
 					<main className='flex min-h-screen flex-col items-center'>
 						{children}
 					</main>
-					<footer></footer>
+					<Footer />
 				</body>
 			</BurgerMenuProvider>
 		</html>
