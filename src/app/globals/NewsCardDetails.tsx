@@ -23,7 +23,7 @@ export const NewsCardDetails = (shopItem: INewsItems) => {
 						{shopItem.date}
 					</h4>
 				</div>
-				<h3 className='font-oxanium text-xl font-medium leading-[150%] desktopL:text-[1.375rem] mt-[0.52rem] mb-[0.22rem] max-tablet:max-w-[18.375rem]'>
+				<h3 className='font-oxanium text-xl font-medium leading-[150%] desktopL:text-xl mt-[0.52rem] mb-[0.22rem] max-tablet:max-w-[18.375rem]'>
 					{shopItem.title}
 				</h3>
 			</div>

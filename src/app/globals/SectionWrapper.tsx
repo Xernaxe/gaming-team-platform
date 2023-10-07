@@ -2,7 +2,7 @@ import React from 'react';
 
 export const SectionWrapper = ({ children }: { children: React.ReactNode }) => {
 	return (
-		<section className='mt-[5.375rem] mb-20 tablet:mt-[6.25rem] desktopL:mt-[10rem]'>
+		<section className='mb-20 tablet:mb-28 desktop:mb-40'>
             {children}
         </section>
 	);

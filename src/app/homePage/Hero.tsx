@@ -7,7 +7,7 @@ import { HeroImg } from '../globals/HeroImg';
 export const Hero = () => {
 	return (
 		<>
-			<section className='hero | flex flex-col gap-[3.125rem] relative pb-10 w-full tablet:flex-row tablet:justify-center tablet:py-8 tablet:items-center tablet:gap-9 desktop:gap-[4.83rem] desktop:pb-0 desktopL:gap-[3.64rem]'>
+			<section className='hero | flex flex-col gap-[3.125rem] relative mb-20 tablet:mb-28 desktop:mb-40 pb-10 w-full tablet:flex-row tablet:justify-center tablet:py-8 tablet:items-center tablet:gap-9 desktop:gap-[4.83rem] desktop:pb-0 desktopL:gap-[3.64rem]'>
 				<div className='mt-[3.125rem] z-20 tablet:mt-0'>
 					<h1 className='font-oxanium text-2xl font-semibold [word-spacing:0.5rem] leading-loose  tablet:text-[clamp(1.75rem,3.4vw,2.1rem)] tablet:[word-spacing:normal] desktop:text-[clamp(1.75rem,3.4vw,3rem)]'>
 						Welcome to the{' '}
