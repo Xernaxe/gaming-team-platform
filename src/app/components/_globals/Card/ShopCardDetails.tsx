@@ -1,6 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
-import { IShopItems } from '../_types/IShopItems';
+import { IShopItems } from '../../../_types/IShopItems';
 
 export const ShopCardDetails = (shopItem: IShopItems) => {
 	return (
@@ -14,11 +14,15 @@ export const ShopCardDetails = (shopItem: IShopItems) => {
 				/>
 			</div>
 			<div className='p-5 flex flex-col '>
-				<h4 className=' text-sm font-medium uppercase text-wGrey tablet:text-base'>{shopItem.tag}</h4>
+				<h4 className=' text-sm font-medium uppercase text-wGrey tablet:text-base'>
+					{shopItem.tag}
+				</h4>
 				<h3 className='font-oxanium text-xl font-medium leading-[150%] desktopL:text-[1.375rem] mt-[0.52rem] mb-[0.22rem]'>
 					{shopItem.title}
 				</h3>
-				<h4 className='font-oxanium font-bold leading-[150%]'>${shopItem.price}</h4>
+				<h4 className='font-oxanium font-bold leading-[150%]'>
+					${shopItem.price}
+				</h4>
 			</div>
 		</>
 	);

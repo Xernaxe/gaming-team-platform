@@ -1,6 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
-import { INewsItems } from '../_types/INewsItems';
+import { INewsItems } from '../../../_types/INewsItems';
 
 export const NewsCardDetails = (shopItem: INewsItems) => {
 	return (

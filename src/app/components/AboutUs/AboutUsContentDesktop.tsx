@@ -1,6 +1,6 @@
 import React from 'react';
-import { IAboutTournamentCard } from '../_types/IAboutTournamentCard';
-import { SkewedButton } from '../globals/SkewedButton';
+import { IAboutTournamentCard } from '../../_types/IAboutTournamentCard';
+import { SkewedButton } from '../_globals/SkewedButton';
 import { AboutTournamentCard } from './AboutTournamentCard';
 
 interface AboutUsContentDesktopProps {

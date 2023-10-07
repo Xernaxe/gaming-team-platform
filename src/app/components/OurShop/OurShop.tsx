@@ -1,9 +1,9 @@
 import React from 'react';
-import { SectionWrapper } from '../globals/SectionWrapper';
-import { SectionHeader } from '../globals/SectionHeader';
-import { IShopItems } from '../_types/IShopItems';
-import { Card } from '../globals/Card';
-import { SkewedButton } from '../globals/SkewedButton';
+import { SectionWrapper } from '../_globals/SectionWrapper';
+import { SectionHeader } from '../_globals/SectionHeader';
+import { IShopItems } from '../../_types/IShopItems';
+import { Card } from '../_globals/Card/Card';
+import { SkewedButton } from '../_globals/SkewedButton';
 
 export const OurShop = () => {
 	const shopItems: IShopItems[] = [

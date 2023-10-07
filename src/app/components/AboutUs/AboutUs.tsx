@@ -1,10 +1,10 @@
 import React from 'react';
-import { SectionHeader } from '../globals/SectionHeader';
+import { SectionHeader } from '../_globals/SectionHeader';
 import Image from 'next/image';
 import { AboutUsContentMobile } from './AboutUsContentMobile';
-import { IAboutTournamentCard } from '../_types/IAboutTournamentCard';
+import { IAboutTournamentCard } from '../../_types/IAboutTournamentCard';
 import { AboutUsContentDesktop } from './AboutUsContentDesktop';
-import { SectionWrapper } from '../globals/SectionWrapper';
+import { SectionWrapper } from '../_globals/SectionWrapper';
 
 export const AboutUs = () => {
 	const aboutTournamentsArray: IAboutTournamentCard[] = [

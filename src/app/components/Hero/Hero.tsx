@@ -1,8 +1,8 @@
 import Link from 'next/link';
 import React from 'react';
-import { SkewedButton } from '../globals/SkewedButton';
+import { SkewedButton } from '../_globals/SkewedButton';
 import Image from 'next/image';
-import { HeroImg } from '../globals/HeroImg';
+import { HeroImg } from './HeroImg';
 
 export const Hero = () => {
 	return (
@@ -26,8 +26,8 @@ export const Hero = () => {
 					/>
 				</div>
 
-					{/* @TODO: CHANGE PX TO RESPONSIVE */}
-				<div className='flex justify-center flex-wrap gap-x-6 z-20 desktop:mt-[3%] desktop:h-[573px] desktop:overflow-hidden desktop:gap-x-7'>  
+				{/* @TODO: CHANGE PX TO RESPONSIVE */}
+				<div className='flex justify-center flex-wrap gap-x-6 z-20 desktop:mt-[3%] desktop:h-[573px] desktop:overflow-hidden desktop:gap-x-7'>
 					<div className='flex flex-col gap-y-10 desktopL:gap-y-[3.5625rem]'>
 						<Image
 							className='object-cover w-[clamp(9.6875rem,_10vw,_15rem)] tablet:w-[clamp(9.6875rem,_20.1vw,_16.875rem)] tablet:h-[clamp(10.5rem,_21vw,_18.375rem)] h-[10.5rem] rounded desktop:rounded-[0.625rem]'

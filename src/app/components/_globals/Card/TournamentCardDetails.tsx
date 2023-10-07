@@ -1,6 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
-import { ITournaments } from '../_types/ITournaments';
+import { ITournaments } from '../../../_types/ITournaments';
 
 export const TournamentCardDetails = (item: ITournaments) => {
 	return (
@@ -37,7 +37,6 @@ export const TournamentCardDetails = (item: ITournaments) => {
 						<p className='font-oxanium text-sm'>Prize</p>
 						<p className='font-oxanium font-medium'>{`$${item.prize}`}</p>
 					</div>
-					
 				</div>
 			</div>
 		</>

@@ -1,10 +1,10 @@
 import './globals.css';
 import type { Metadata } from 'next';
 import 'tailwindcss/tailwind.css';
-import { NavbarMobile } from './globals/NavbarMobile';
-import { Header } from './globals/Header';
+import { NavbarMobile } from './components/_globals/Header/Navbar/NavbarMobile';
+import { Header } from './components/_globals/Header/Header';
 import { BurgerMenuProvider } from './_providers/BurgermenuContext';
-import { Footer } from './globals/Footer';
+import { Footer } from './components/_globals/Footer/Footer';
 
 export const metadata: Metadata = {
 	title: 'Create Next App',

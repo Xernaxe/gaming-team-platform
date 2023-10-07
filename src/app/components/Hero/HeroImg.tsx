@@ -1,7 +1,7 @@
 'use client';
 import Image from 'next/image';
 import React from 'react';
-import { useBurgerMenu } from '../_providers/BurgermenuContext';
+import { useBurgerMenu } from '../../_providers/BurgermenuContext';
 
 export const HeroImg = () => {
 	const { isBurgerMenuOpen } = useBurgerMenu();

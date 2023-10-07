@@ -1,9 +1,9 @@
 import React from 'react';
-import { SectionWrapper } from '../globals/SectionWrapper';
-import { SectionHeader } from '../globals/SectionHeader';
-import { SkewedButton } from '../globals/SkewedButton';
-import { Card } from '../globals/Card';
-import { ITournaments } from '../_types/ITournaments';
+import { SectionWrapper } from '../_globals/SectionWrapper';
+import { SectionHeader } from '../_globals/SectionHeader';
+import { SkewedButton } from '../_globals/SkewedButton';
+import { Card } from '../_globals/Card/Card';
+import { ITournaments } from '../../_types/ITournaments';
 
 export const Tournaments = () => {
 	const tournaments: ITournaments[] = [
@@ -55,7 +55,6 @@ export const Tournaments = () => {
 			platform: 'PC',
 			prize: 500,
 		},
-
 	];
 
 	return (

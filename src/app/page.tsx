@@ -1,9 +1,9 @@
-import { AboutUs } from './homePage/AboutUs';
-import { Hero } from './homePage/Hero';
-import { LatestNews } from './homePage/LatestNews';
-import { OurShop } from './homePage/OurShop';
-import { TournamentBanner } from './homePage/TournamentBanner';
-import { Tournaments } from './homePage/Tournaments';
+import { AboutUs } from './components/AboutUs/AboutUs';
+import { Hero } from './components/Hero/Hero';
+import { LatestNews } from './components/LatestNews/LatestNews';
+import { OurShop } from './components/OurShop/OurShop';
+import { TournamentBanner } from './components/Banner/TournamentBanner';
+import { Tournaments } from './components/Tournaments/Tournaments';
 
 export default function Home() {
 	return (

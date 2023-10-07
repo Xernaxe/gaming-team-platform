@@ -1,8 +1,8 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
-import { SkewedButton } from './SkewedButton';
-import { SectionHeader } from './SectionHeader';
+import { SkewedButton } from '../SkewedButton';
+import { SectionHeader } from '../SectionHeader';
 
 export const Footer = () => {
 	const footerLinks = [

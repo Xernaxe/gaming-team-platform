@@ -1,9 +1,9 @@
-import React from 'react'
-import { SectionWrapper } from '../globals/SectionWrapper';
-import { SectionHeader } from '../globals/SectionHeader';
-import { Card } from '../globals/Card';
-import { SkewedButton } from '../globals/SkewedButton';
-import { INewsItems } from '../_types/INewsItems';
+import React from 'react';
+import { SectionWrapper } from '../_globals/SectionWrapper';
+import { SectionHeader } from '../_globals/SectionHeader';
+import { Card } from '../_globals/Card/Card';
+import { SkewedButton } from '../_globals/SkewedButton';
+import { INewsItems } from '../../_types/INewsItems';
 
 export const LatestNews = () => {
 	const newsItems: INewsItems[] = [
@@ -19,20 +19,18 @@ export const LatestNews = () => {
 			tag: 'Trending',
 			date: 'Aug 27, 2023',
 		},
-        {
+		{
 			imgSrc: 'news-item_3.png',
 			title: 'The best gaming accessories and gadgets for every gamer',
 			tag: 'Trending',
 			date: 'Aug 27, 2023',
 		},
-        {
+		{
 			imgSrc: 'news-item_4.png',
 			title: 'The life of a professional eSports gamer',
 			tag: 'Sponsored',
 			date: 'Aug 27, 2023',
 		},
-
-
 	];
 
 	return (
@@ -50,5 +48,4 @@ export const LatestNews = () => {
 			</div>
 		</SectionWrapper>
 	);
-}
-
+};
