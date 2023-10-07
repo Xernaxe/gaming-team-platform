@@ -5,13 +5,16 @@ import Image from 'next/image';
 export const Card = (tournament: ITournaments) => {
 	return (
 		<div className='flex flex-col justify-center rounded-t-[0.63rem] bg-[linear-gradient(134deg,_#071626_-7.75%,_rgba(7,_22,_38,_0.00)_136.66%)] tablet:w-[332px] max-tablet:[&:nth-child(n+4)]:hidden max-desktop:[&:nth-child(n+5)]:hidden  desktopL:w-[23.125rem]'>
+			<div className="relative h-[194px] w-[335px] max-h-[194px] tablet:w-[332px] desktopL:w-[23.125rem]">
+
 			<Image
 				src={`/images/${tournament.imgSrc}`}
 				alt=''
-				width={335}
-				height={194}
-                className='object-cover w-auto h-auto max-h-[194px] rounded-t-[0.63rem] tablet:w-[332px] desktopL:w-[23.125rem]'
-			/>
+				
+				fill={true}
+                className='object-cover rounded-t-[0.63rem] '
+				/>
+				</div>
 			<div className='p-5 '>
 				<h3 className='font-oxanium text-xl font-medium desktopL:text-[1.375rem]'>{tournament.title}</h3>
 				{/* @TODO: CHANGE FROM HARDCODED TO COMPUTED */}
