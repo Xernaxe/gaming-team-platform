@@ -33,6 +33,7 @@ export const TournamentBanner = () => {
 						alt='banner bg'
 						width={403.427}
 						height={1111.263}
+            priority={true}
 						className='absolute top-0 left-0 object-cover max-w-screen w-screen h-full'
 					></Image>
 					<div className='absolute top-0 left-0 h-full w-full bg-[linear-gradient(96deg,_rgba(15,_43,_65,_0.90)_-4.34%,_rgba(1,_10,_16,_0.90)_103.42%)]'></div>
