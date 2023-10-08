@@ -7,7 +7,7 @@ export const Header = () => {
 	const navLinks: INavLinks[] = [
 		{ name: 'Tournaments', href: '#' },
 		{ name: 'Our Team', href: '#' },
-		{ name: 'Our Sponsors', href: '#' },
+		{ name: 'Blog', href: '#' },
 		{ name: 'About Us', href: '#' },
 		{ name: 'Shop', href: '#' },
 		{ name: 'Contact Us', href: '#' },
