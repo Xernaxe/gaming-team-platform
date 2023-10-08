@@ -38,7 +38,7 @@ export const LatestNews = () => {
 			<SectionHeader title='Latest News' />
 
 			<div className='flex flex-col items-center'>
-				<div className='flex flex-col items-center gap-6 mb-10 tablet:flex-wrap tablet:flex-row tablet:justify-center desktopL:gap-[29px]'>
+				<div className='flex flex-col items-center w-full gap-6 mb-10 tablet:flex-wrap tablet:flex-row tablet:justify-center desktopL:gap-[29px]'>
 					{newsItems.map((newsItem, index) => {
 						return <Card key={index} {...newsItem} />;
 					})}

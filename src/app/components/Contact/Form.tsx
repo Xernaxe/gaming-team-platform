@@ -7,7 +7,7 @@ export const Form = () => {
 		<form className='flex flex-col gap-6 tablet:flex-row tablet:flex-wrap'>
 			<fieldset className='flex flex-col gap-6 tablet:flex-row tablet:flex-wrap tablet:w-full'>
 				<legend className='absolute -top-96'>Type in your name.</legend>
-				<div className='flex flex-col tablet:w-[48%]'>
+				<div className='flex flex-col tablet:w-[47.5%]'>
 					<label className=' font-oxanium ' htmlFor='First Name'>
 						First Name <span aria-label='required'>*</span>
 					</label>
@@ -19,7 +19,7 @@ export const Form = () => {
 						placeholder='First name'
 					/>
 				</div>
-				<div className='flex flex-col tablet:w-[48%]'>
+				<div className='flex flex-col tablet:w-[47.5%]'>
 					<label className=' font-oxanium' htmlFor='Last Name'>
 						Last Name <span aria-label='required'>*</span>
 					</label>
@@ -33,7 +33,7 @@ export const Form = () => {
 				</div>
 			</fieldset>
 
-			<fieldset className='tablet:w-[48%]'>
+			<fieldset className='tablet:w-[47.5%]'>
 				<legend className='absolute -top-96'>Type in your email.</legend>
 				<div className='flex flex-col'>
 					<label className=' font-oxanium' htmlFor='Email'>
@@ -49,7 +49,7 @@ export const Form = () => {
 				</div>
 			</fieldset>
 
-			<fieldset className='tablet:w-[48%]'>
+			<fieldset className='tablet:w-[47.5%]'>
 				<legend className='absolute -top-96'>How did you hear about us?</legend>
 				<div className='flex flex-col'>
 					<label className=' font-oxanium' htmlFor='Options'>
@@ -93,7 +93,7 @@ export const Form = () => {
 					/>
 				</div>
 			</fieldset>
-			<div className='m-auto'>
+			<div className='m-auto desktop:m-0'>
 				<SkewedButton text='Submit' width='normal' />
 			</div>
 		</form>

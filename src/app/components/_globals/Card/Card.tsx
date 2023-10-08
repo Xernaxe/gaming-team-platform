@@ -16,7 +16,7 @@ export const Card = (item: ITournaments | IShopItems | INewsItems) => {
 					? 'max-tablet:[&:nth-child(n+4)]:hidden max-desktopL:[&:nth-child(n+5)]:hidden'
 					: 'max-tablet:[&:nth-child(n+4)]:hidden desktopL:[&:nth-child(n+4)]:hidden'
 			}
-		flex flex-col justify-center rounded-t-[0.63rem] bg-[linear-gradient(134deg,_#071626_-7.75%,_rgba(7,_22,_38,_0.00)_136.66%)] tablet:w-[332px]  desktopL:w-[23.125rem]`}
+		flex flex-col w-full justify-center rounded-t-[0.63rem] bg-[linear-gradient(134deg,_#071626_-7.75%,_rgba(7,_22,_38,_0.00)_136.66%)] tablet:w-[48%]  desktopL:w-[23.125rem]`}
 		>
 			{isTournamentItem ? (
 				<TournamentCardDetails {...(item as ITournaments)} />

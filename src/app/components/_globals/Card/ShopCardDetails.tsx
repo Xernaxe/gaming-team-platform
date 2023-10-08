@@ -5,7 +5,7 @@ import { IShopItems } from '../../../_types/IShopItems';
 export const ShopCardDetails = (shopItem: IShopItems) => {
 	return (
 		<>
-			<div className='relative h-[194px] w-[335px] max-h-[194px] tablet:w-[332px] desktopL:w-[23.125rem]'>
+			<div className='relative h-[51.71vw] tablet:max-h-[25vw] desktop:max-h-[194px] w-full max-h-[250px] desktopL:w-[23.125rem]'>
 				<Image
 					src={`/images/${shopItem.imgSrc}`}
 					alt=''
