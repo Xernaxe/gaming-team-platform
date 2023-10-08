@@ -4,6 +4,7 @@ import { LatestNews } from './components/LatestNews/LatestNews';
 import { OurShop } from './components/OurShop/OurShop';
 import { TournamentBanner } from './components/Banner/TournamentBanner';
 import { Tournaments } from './components/Tournaments/Tournaments';
+import { Contact } from './components/Contact/Contact';
 
 export default function Home() {
 	return (
@@ -11,6 +12,7 @@ export default function Home() {
 			<Hero />
 			<AboutUs />
 			<Tournaments />
+			<Contact />
 			<OurShop />
 			<LatestNews />
 			<TournamentBanner />
