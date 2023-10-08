@@ -8,7 +8,7 @@ import { ITournaments } from '../../_types/ITournaments';
 export const Tournaments = () => {
 	const tournaments: ITournaments[] = [
 		{
-			imgSrc: 'cs-go_1.avif',
+			imgSrc: 'cs-go_1.png',
 			title: 'CS:GO Global Gaming League',
 			date: '10 Sept 2023 / 14:00 PM IST',
 			playMode: '5v5',
@@ -16,7 +16,7 @@ export const Tournaments = () => {
 			prize: 500,
 		},
 		{
-			imgSrc: 'pubg_1.avif',
+			imgSrc: 'pubg_1.png',
 			title: 'PUBG Esports Championship',
 			date: '15 Sept 2023 / 20:00 PM IST',
 			playMode: '1v1',
@@ -24,7 +24,7 @@ export const Tournaments = () => {
 			prize: 600,
 		},
 		{
-			imgSrc: 'freefire.avif',
+			imgSrc: 'freefire.png',
 			title: 'Free Fire ultimate challenge',
 			date: '20 Sept 2023 / 20:00 PM IST',
 			playMode: '1v1',
@@ -32,7 +32,7 @@ export const Tournaments = () => {
 			prize: 600,
 		},
 		{
-			imgSrc: 'cod.avif',
+			imgSrc: 'cod.png',
 			title: 'Call of Duty Mobile league',
 			date: '21 Sept 2023 / 20:00 PM IST',
 			playMode: '1v1',
@@ -40,7 +40,7 @@ export const Tournaments = () => {
 			prize: 200,
 		},
 		{
-			imgSrc: 'cs-go_2.avif',
+			imgSrc: 'cs-go_2.png',
 			title: 'CS:GO Ultimate Challenge',
 			date: '21 Sept 2023 / 16:00 PM IST',
 			playMode: '3v3',
@@ -48,7 +48,7 @@ export const Tournaments = () => {
 			prize: 150,
 		},
 		{
-			imgSrc: 'overwatch.avif',
+			imgSrc: 'overwatch.png',
 			title: 'Overwatch league tournament',
 			date: '25 Sept 2023 / 21:00 AM IST',
 			playMode: '5v5',
