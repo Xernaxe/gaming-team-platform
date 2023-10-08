@@ -33,14 +33,14 @@ export const Hero = () => {
 							className='object-cover w-[clamp(9.6875rem,_10vw,_15rem)] tablet:w-[clamp(9.6875rem,_20.1vw,_16.875rem)] tablet:h-[clamp(10.5rem,_21vw,_18.375rem)] h-[10.5rem] rounded desktop:rounded-[0.625rem]'
 							width={155}
 							height={168}
-							src='/images/cs-go.png'
+							src='/images/cs-go.avif'
 							alt='CS:GO'
 						/>
 						<Image
 							className='object-cover w-[clamp(9.6875rem,_10vw,_15rem)] tablet:w-[clamp(9.6875rem,_20.1vw,_16.875rem)] tablet:h-[clamp(10.5rem,_21vw,_18.375rem)] h-[10.5rem] rounded desktop:rounded-[0.625rem]'
 							width={155}
 							height={168}
-							src='/images/fortnite.png'
+							src='/images/fortnite.avif'
 							alt='Fortnite'
 						/>
 					</div>
@@ -49,14 +49,14 @@ export const Hero = () => {
 							className='object-cover w-[clamp(9.6875rem,_10vw,_15rem)] tablet:w-[clamp(9.6875rem,_20.1vw,_16.875rem)] tablet:h-[clamp(10.5rem,_21vw,_18.375rem)] h-[10.5rem] rounded desktop:rounded-[0.625rem]'
 							width={155}
 							height={168}
-							src='/images/pubg.png'
+							src='/images/pubg.avif'
 							alt='PUBG'
 						/>
 						<Image
 							className='object-cover w-[clamp(9.6875rem,_10vw,_15rem)] tablet:w-[clamp(9.6875rem,_20.1vw,_16.875rem)] tablet:h-[clamp(10.5rem,_21vw,_18.375rem)] h-[10.5rem] rounded desktop:rounded-[0.625rem]'
 							width={155}
 							height={168}
-							src='/images/valorant.png'
+							src='/images/valorant.avif'
 							alt='Valorant'
 						/>
 					</div>

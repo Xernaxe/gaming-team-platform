@@ -14,7 +14,7 @@ export const HeroImg = () => {
 		>
 			<Image
 				className='object-cover max-w-screen w-screen h-full'
-				src={'/images/hero-bg.png'}
+				src={'/images/hero-bg.avif'}
 				width={1920}
 				height={1080}
 				alt='Hero Image'

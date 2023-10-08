@@ -8,25 +8,25 @@ import { INewsItems } from '../../_types/INewsItems';
 export const LatestNews = () => {
 	const newsItems: INewsItems[] = [
 		{
-			imgSrc: 'news-item_1.png',
+			imgSrc: 'news-item_1.avif',
 			title: 'Pro tips: How to improve your aim and reflexes in eSports',
 			tag: 'New',
 			date: 'Aug 25, 2023',
 		},
 		{
-			imgSrc: 'news-item_2.png',
+			imgSrc: 'news-item_2.avif',
 			title: 'Top 10 eSports games to watch and play in 2023',
 			tag: 'Trending',
 			date: 'Aug 27, 2023',
 		},
 		{
-			imgSrc: 'news-item_3.png',
+			imgSrc: 'news-item_3.avif',
 			title: 'The best gaming accessories and gadgets for every gamer',
 			tag: 'Trending',
 			date: 'Aug 27, 2023',
 		},
 		{
-			imgSrc: 'news-item_4.png',
+			imgSrc: 'news-item_4.avif',
 			title: 'The life of a professional eSports gamer',
 			tag: 'Sponsored',
 			date: 'Aug 27, 2023',
