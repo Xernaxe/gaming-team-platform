@@ -64,8 +64,8 @@ export const Footer = () => {
 				<ul className='flex gap-10'>
 					{socials.map((social, index) => {
 						return (
-							<li>
-								<Link href={social.href} key={index}>
+							<li key={index}>
+								<Link href={social.href} >
 									<Image
 										src={`/images/${social.src}`}
 										alt={social.alt}

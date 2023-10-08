@@ -59,13 +59,13 @@ export const Form = () => {
 						placeholder='Select option'
 						className='px-5 h-12 mt-4 -skew-x-[5deg] border-wBlue border-solid border bg-transparent placeholder:text-sm placeholder:text-dBlueishGrey placeholder:skew-x-[5deg] tablet:w-full desktop:-skew-x-[10deg]'
 						name='Options'
+						defaultValue={'HIDDEN'}
 					>
 						{/* TODO@: Check if this is the industry standard for displaying "placeholder" text in a select box */}
 						<option
 							hidden
 							disabled
-							selected
-							value=''
+							value={'HIDDEN'}
 							className='text-dBlueishGrey'
 						>
 							Select option
