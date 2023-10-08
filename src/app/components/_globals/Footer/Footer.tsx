@@ -64,14 +64,16 @@ export const Footer = () => {
 				<ul className='flex gap-10'>
 					{socials.map((social, index) => {
 						return (
-							<Link href={social.href} key={index}>
-								<Image
-									src={`/images/${social.src}`}
-									alt={social.alt}
-									width={24}
-									height={24}
-								/>
-							</Link>
+							<li>
+								<Link href={social.href} key={index}>
+									<Image
+										src={`/images/${social.src}`}
+										alt={social.alt}
+										width={24}
+										height={24}
+									/>
+								</Link>
+							</li>
 						);
 					})}
 				</ul>
