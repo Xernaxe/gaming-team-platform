@@ -19,6 +19,7 @@ const BurgerMenu = () => {
 					className='w-[clamp(2rem,_5.3vw,_2.5rem)] h-[clamp(2rem,_5.3vw,_2.5rem)]'
 					src='./images/burgermenu.svg'
 					alt='OPEN'
+					priority={true}
 				/>
 			)}
 			{isBurgerMenuOpen && (
@@ -27,6 +28,7 @@ const BurgerMenu = () => {
 					height={24}
 					src='./images/closemenu.svg'
 					alt='CLOSE'
+					priority={true}
 				/>
 			)}
 		</div>
