@@ -35,6 +35,7 @@ export const Hero = () => {
 							height={168}
 							src='/images/cs-go.png'
 							alt='CS:GO'
+							priority={true}
 						/>
 						<Image
 							className='object-cover w-[clamp(9.6875rem,_10vw,_15rem)] tablet:w-[clamp(9.6875rem,_20.1vw,_16.875rem)] tablet:h-[clamp(10.5rem,_21vw,_18.375rem)] h-[10.5rem] rounded desktop:rounded-[0.625rem]'
@@ -42,6 +43,7 @@ export const Hero = () => {
 							height={168}
 							src='/images/fortnite.png'
 							alt='Fortnite'
+							priority={true}
 						/>
 					</div>
 					<div className='flex flex-col gap-y-10 mt-[0.875rem] desktop:mt-[1.6875rem] desktopL:gap-y-[3.5625rem]'>
@@ -51,6 +53,7 @@ export const Hero = () => {
 							height={168}
 							src='/images/pubg.png'
 							alt='PUBG'
+							priority={true}
 						/>
 						<Image
 							className='object-cover w-[clamp(9.6875rem,_10vw,_15rem)] tablet:w-[clamp(9.6875rem,_20.1vw,_16.875rem)] tablet:h-[clamp(10.5rem,_21vw,_18.375rem)] h-[10.5rem] rounded desktop:rounded-[0.625rem]'
@@ -58,6 +61,7 @@ export const Hero = () => {
 							height={168}
 							src='/images/valorant.png'
 							alt='Valorant'
+							priority={true}
 						/>
 					</div>
 				</div>

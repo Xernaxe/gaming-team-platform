@@ -18,6 +18,7 @@ export const HeroImg = () => {
 				width={1920}
 				height={1080}
 				alt='Hero Image'
+				priority={true}
 			/>
 			<div className='overlay | bg-[#010a11] bg-opacity-[96%] absolute top-0 h-full w-full'></div>
 			<div className='fog-left-bottom | absolute -bottom-1/2 -translate-y-[10%] left-1/2 -translate-x-[85%] h-[530px] w-[530px] rounded-[100%] bg-[#3FD2EC] bg-opacity-[35%] blur-[150px] tablet:left-[10%] tablet:translate-y-[40%] tablet:scale-150 desktop:-translate-y-[25%] desktop:left-[38%]'></div>
