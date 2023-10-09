@@ -31,6 +31,7 @@ export const NavbarDesktop: React.FC<NavbarDesktopProps> = ({ navLinks }) => {
 						width={78}
 						height={60}
 						alt='Logo'
+						priority={true}
 					/>
 				</Link>
 			</div>

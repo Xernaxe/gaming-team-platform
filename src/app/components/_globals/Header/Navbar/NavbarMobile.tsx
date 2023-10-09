@@ -22,6 +22,7 @@ export const NavbarMobile: React.FC<NavbarMobileProps> = ({ navLinks }) => {
 					width={78}
 					height={60}
 					alt='Logo'
+					priority={true}
 				/>
 			</Link>
 
