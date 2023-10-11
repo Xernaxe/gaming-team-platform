@@ -1,0 +1,77 @@
+.navDesktop {
+	display: none;
+	position: relative;
+	align-items: center;
+	z-index: 20;
+	justify-content: start;
+	gap: 0;
+
+	@include mqDesktopL() {
+		justify-content: center;
+	}
+
+	@include mqDesktop() {
+		display: flex;
+	}
+
+	ul {
+		display: flex;
+		gap: 2.5rem;
+		align-items: center;
+		justify-content: center;
+
+		&:nth-child(1) {
+			margin-left: auto;
+			margin-right: 2.5rem;
+			order: 2;
+
+			@include mqDesktopL() {
+				order: 1;
+				margin: 0;
+				margin-left: auto;
+				flex-basis: 38%;
+				justify-content: flex-end;
+			}
+		}
+
+		&:nth-child(3) {
+			margin-right: 0;
+			order: 3;
+			@include mqDesktopL() {
+				justify-content: flex-start;
+			}
+		}
+		@include mqDesktopL() {
+			margin-left: 0;
+			margin-right: 0;
+			flex-basis: 38%;
+		}
+	}
+
+	div {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		@include mqDesktop() {
+			order: 1;
+		}
+
+		@include mqDesktopL() {
+			flex-basis: 24%;
+		}
+	}
+}
+
+.navMobile {
+	display: flex;
+	justify-content: space-between;
+	position: relative;
+	justify-items: center;
+	align-items: center;
+	z-index: 50;
+
+	@include mqDesktop() {
+		display: none;
+	}
+}

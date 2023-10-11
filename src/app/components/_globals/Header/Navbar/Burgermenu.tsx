@@ -1,6 +1,6 @@
 'use client';
 import Image from 'next/image';
-import React, { createContext, useContext } from 'react';
+import React from 'react';
 import { useBurgerMenu } from '../../../../_providers/BurgermenuContext';
 
 const BurgerMenu = () => {
