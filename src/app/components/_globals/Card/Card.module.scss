@@ -3,12 +3,22 @@
 	flex-direction: column;
 	width: 100%;
 	justify-content: center;
-	border-radius: 0.63rem 0.63rem 0 0;
+	border-radius: 0.63rem;
+	transition: all 0.3s ease-in-out;
+	--pos: 0;
+	cursor: pointer;
+
 	background: linear-gradient(
-		134deg,
-		#071626 -7.75%,
-		rgba(7, 22, 38, 0) 136.66%
-	);
+			134deg,
+			// 320deg,
+			rgba(7, 22, 38, 0) -2.75%,
+			#071626 100%
+		)
+		var(--pos, 0%) / 200% ;
+	&:hover {
+		--pos: 100%;
+		scale: 1.01;
+	}
 	@include mqTablet() {
 		width: 48%;
 	}
@@ -52,12 +62,10 @@
 	}
 }
 
-
-
 // relative h-[51.71vw]
 //  tablet:max-h-[25vw] desktop:max-h-[194px] w-full max-h-[250px] desktopL:w-[23.125rem]
 
-.imageWrapper{
+.imageWrapper {
 	position: relative;
 	height: 51.71vw;
 	width: 100%;
