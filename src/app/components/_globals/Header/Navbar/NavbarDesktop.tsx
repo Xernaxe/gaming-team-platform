@@ -25,7 +25,7 @@ export const NavbarDesktop: React.FC<NavbarDesktopProps> = ({ navLinks }) => {
 				})}
 			</ul>
 			<div>
-				<Link href={'#'}>
+				<Link href={'/'}>
 					<Image
 						src='./images/logo.svg'
 						className='w-[clamp(4.875rem,_9.1vw,_8.125rem)]'

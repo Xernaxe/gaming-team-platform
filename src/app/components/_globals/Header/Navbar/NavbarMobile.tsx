@@ -16,7 +16,7 @@ export const NavbarMobile: React.FC<NavbarMobileProps> = ({ navLinks }) => {
 
 	return (
 		<nav className={styles.navMobile}>
-			<Link href={'#'}>
+			<Link href={'/'}>
 				<Image
 					src='./images/logo.svg'
 					className='w-[clamp(3.25rem,_10.5vw,_4.875rem)]'

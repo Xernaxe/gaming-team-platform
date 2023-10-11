@@ -2,16 +2,17 @@
 import Image from 'next/image';
 import React from 'react';
 import { useBurgerMenu } from '../../_providers/BurgermenuContext';
-import styles from './HeroImg.module.scss'
+import styles from './HeroImg.module.scss';
 
 export const HeroImg = () => {
 	const { isBurgerMenuOpen } = useBurgerMenu();
 
 	return (
 		<div
-			className={styles.heroImage + ` ${
-				isBurgerMenuOpen ? ' z-40' : ''
-			}`}
+			className={
+				styles.heroImage +
+				` ${isBurgerMenuOpen ? ' [z-index:40!important]' : ''}`
+			}
 		>
 			<Image
 				className='object-cover max-w-screen w-screen h-full'

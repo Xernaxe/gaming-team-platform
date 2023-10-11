@@ -22,13 +22,15 @@ export const Footer = () => {
 	return (
 		<footer className='flex flex-col items-center gap-10 py-[1.88rem] -skew-x-[0.5deg] bg-[linear-gradient(180deg,_#0D2137_-32.22%,_#030C15_146.71%)] tablet:flex-wrap tablet:flex-row tablet:justify-center tablet:gap-x-16 desktop:py-10 desktop:justify-start desktop:pl-[4vw] desktop:-skew-x-[2deg] desktopL:pl-[6vw]'>
 			<div className='basis-full flex justify-center desktop:basis-[0%] desktop:skew-x-[2deg]'>
-				<Image
-					src={'/images/logo.svg'}
-					alt='Logo'
-					width={80}
-					height={62}
-					className=' max-w-[5rem] desktop:max-w-[8.125rem] desktop:w-[8.125rem]'
-				/>
+				<Link href={'/'}>
+					<Image
+						src={'/images/logo.svg'}
+						alt='Logo'
+						width={80}
+						height={62}
+						className=' max-w-[5rem] desktop:max-w-[8.125rem] desktop:w-[8.125rem]'
+					/>
+				</Link>
 			</div>
 
 			<nav className='desktop:basis-2/3  desktop:skew-x-[2deg] desktopL:basis-[80%] desktopL:pl-[3vw]'>
@@ -65,7 +67,7 @@ export const Footer = () => {
 					{socials.map((social, index) => {
 						return (
 							<li key={index}>
-								<Link href={social.href} >
+								<Link href={social.href}>
 									<Image
 										src={`/images/${social.src}`}
 										alt={social.alt}
