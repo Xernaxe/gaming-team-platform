@@ -1,0 +1,92 @@
+.banner {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 1.5rem;
+	position: relative;
+	transform: skewX(-1deg);
+	overflow: hidden;
+
+	@include mqTablet() {
+		padding: 1.875rem 5.5rem;
+	}
+
+	@include mqDesktop() {
+		flex-direction: row;
+		padding: 3.2625rem 2rem;
+		gap: 1.88rem;
+		transform: skewX(-3deg);
+	}
+
+	@include mqDesktopL() {
+		padding: 3.2625rem 4.37rem;
+	}
+
+	&:hover .backgroundImage img {
+		scale: 1.08;
+	}
+
+	.imageWrapper {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		position: relative;
+		z-index: 20;
+		transform: skewX(1deg);
+		background: linear-gradient(151deg, #1b3b60 8.05%, #040d17 154.57%);
+		width: 3.75rem;
+		height: 3.75rem;
+		border-radius: 50%;
+
+		@include mqDesktop() {
+			transform: skewX(5deg);
+			min-width: 5.625rem;
+			min-height: 5.625rem;
+			background: linear-gradient(150deg, #0a1f35 -10.24%, #040d17 161.22%);
+		}
+	}
+
+	h3 {
+		padding: 1.5rem 0;
+		position: relative;
+		z-index: 20;
+		font-weight: 600;
+		font-family: $primaryFont;
+		line-height: 160%;
+		text-align: center;
+		transform: skewX(1deg);
+
+		@include mqTablet() {
+			font-size: 1.25rem;
+		}
+
+		@include mqDesktop() {
+			text-align: left;
+			transform: skewX(5deg);
+		}
+
+		@include mqDesktopL() {
+			font-size: 1.5rem;
+			padding: 0 5rem 0 0;
+		}
+	}
+
+	.backgroundImage {
+		z-index: 10;
+		div {
+			position: absolute;
+			top: 0;
+			left: 0;
+			height: 100%;
+			width: 100%;
+			background: linear-gradient(
+				96deg,
+				rgba(15, 32, 65, 0.9) -4.34%,
+				rgba(1, 10, 16, 0.9) 103.42%
+			);
+		}
+		img {
+			transition: scale 0.25s ease-in-out;
+		}
+	}
+}
