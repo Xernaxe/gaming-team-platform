@@ -12,7 +12,8 @@
     "next": "latest",
     "next-sanity": "^5.5.8",
     "react": "latest",
-    "react-dom": "latest"
+    "react-dom": "latest",
+    "sharp": "^0.32.6"
   },
   "devDependencies": {
     "@types/node": "latest",
