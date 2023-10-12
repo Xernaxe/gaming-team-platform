@@ -1,12 +1,11 @@
 import React from 'react';
 import Image from 'next/image';
 import { INewsItems } from '../../../_types/INewsItems';
-import styles from './Card.module.scss';
 
 export const NewsCardDetails = (shopItem: INewsItems) => {
 	return (
 		<>
-			<div className={styles.imageWrapper}>
+			<div className='relative h-[51.71vw] tablet:max-h-[25vw] desktop:max-h-[194px] w-full max-h-[250px] desktopL:w-[23.125rem]'>
 				<Image
 					src={`/images/${shopItem.imgSrc}`}
 					alt=''

@@ -6,7 +6,6 @@ import BurgerMenu from './Burgermenu';
 import INavLinks from '../../../../_types/INavLinks';
 import Image from 'next/image';
 import { useBurgerMenu } from '../../../../_providers/BurgermenuContext';
-import styles from './Navbar.module.scss'
 
 interface NavbarMobileProps {
 	navLinks: INavLinks[];
@@ -15,7 +14,7 @@ export const NavbarMobile: React.FC<NavbarMobileProps> = ({ navLinks }) => {
 	const { isBurgerMenuOpen } = useBurgerMenu();
 
 	return (
-		<nav className={styles.navMobile}>
+		<nav className='desktop:hidden flex justify-between relative items-center z-50'>
 			<Link href={'/'}>
 				<Image
 					src='./images/logo.svg'

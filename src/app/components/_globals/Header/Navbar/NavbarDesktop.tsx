@@ -2,7 +2,6 @@ import React from 'react';
 import INavLinks from '../../../../_types/INavLinks';
 import Link from 'next/link';
 import Image from 'next/image';
-import styles from './Navbar.module.scss'
 
 interface NavbarDesktopProps {
 	navLinks: INavLinks[];
@@ -12,8 +11,8 @@ export const NavbarDesktop: React.FC<NavbarDesktopProps> = ({ navLinks }) => {
 	const navFirst3 = navLinks.slice(0, 3);
 	const navLast3 = navLinks.slice(3, navLinks.length);
 	return (
-		<nav className={styles.navDesktop}>
-			<ul>
+		<nav className='navbarDesktop | max-[1023px]:hidden flex items-center z-20 relative justify-start gap-0 desktopL:justify-center'>
+			<ul className='flex  gap-10 items-center justify-center desktopL:order-1 order-2 ml-auto mr-10 desktopL:m-0 desktopL:[flex-basis:38%] desktopL:justify-end'>
 				{navFirst3.map((link, index) => {
 					return (
 						<li key={index}>
@@ -24,7 +23,7 @@ export const NavbarDesktop: React.FC<NavbarDesktopProps> = ({ navLinks }) => {
 					);
 				})}
 			</ul>
-			<div>
+			<div className=' flex items-center justify-center desktop:order-1 desktopL:[flex-basis:24%] '>
 				<Link href={'/'}>
 					<Image
 						src='./images/logo.svg'
@@ -36,7 +35,7 @@ export const NavbarDesktop: React.FC<NavbarDesktopProps> = ({ navLinks }) => {
 					/>
 				</Link>
 			</div>
-			<ul>
+			<ul className='flex  items-center justify-center gap-10 desktop:order-3 desktopL:[flex-basis:38%] desktopL:justify-start'>
 				{navLast3.map((link, index) => {
 					return (
 						<li key={index}>

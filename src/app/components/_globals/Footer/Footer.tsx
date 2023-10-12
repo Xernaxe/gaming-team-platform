@@ -33,7 +33,7 @@ export const Footer = () => {
 				</Link>
 			</div>
 
-			<nav className='desktop:basis-2/3  desktop:skew-x-[2deg] desktopL:basis-[80%] desktopL:pl-[3vw]'>
+			<nav className='navbarDesktop | desktop:basis-2/3  desktop:skew-x-[2deg] desktopL:basis-[80%] desktopL:pl-[3vw]'>
 				<ul className='flex flex-col items-center gap-7 tablet:flex-row tablet:flex-wrap tablet:justify-center'>
 					{footerLinks.map((link, index) => {
 						return (

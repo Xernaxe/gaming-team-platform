@@ -21,12 +21,74 @@ body {
 
 @media screen and (min-width: 768px) {
 	body {
-		padding: 1.25rem clamp(2.5rem, 5vw, 10.62rem)
+		padding: 1.25rem clamp(2.5rem, 5vw, 10.62rem);
 	}
 }
 
-@media screen and (min-width: 1440px){
-	body{
+@media screen and (min-width: 1440px) {
+	body {
 		padding: 1.25rem 8.44rem;
 	}
+}
+
+.navbarDesktop ul li {
+	position: relative;
+	overflow: hidden;
+}
+
+.navbarDesktop ul li a {
+	height: calc(100% + 10px);
+}
+
+.navbarDesktop ul li a::before,
+.navbarDesktop ul li a::after {
+	content: '';
+	display: block;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 2px;
+	transition: transform 0.45s;
+	transform: translateX(-110%);
+	background: #00eebd;
+}
+
+.navbarDesktop ul li a::after {
+	top: 90%;
+	transform: translateX(110%);
+}
+
+.navbarDesktop ul li a:hover::before {
+	transform: translateX(110%);
+}
+.navbarDesktop ul li a:hover::after {
+	transform: translateX(-110%);
+}
+
+.Card {
+	scale: 1;
+	cursor: pointer;
+	--pos: 0%;
+	background: linear-gradient(134deg, rgba(7, 22, 38, 0) -2.75%, #071626 100%)
+		var(--pos, 0%) / 200%;
+	transition: pos 0.3s ease-in-out, scale 0.3s ease-in-out;
+}
+
+.Card:hover {
+	--pos: 100%;
+	scale: 1.01;
+}
+
+.Banner {
+	scale: 1;
+	overflow: hidden;
+}
+.Banner .BannerImg img,
+.Banner .BannerImg div {
+	transition: scale 0.3s ease-in-out;
+}
+
+.Banner:hover .BannerImg img,
+.Banner:hover .BannerImg div {
+	scale: 1.08;
 }
