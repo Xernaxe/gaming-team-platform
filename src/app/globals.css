@@ -71,7 +71,7 @@ body {
 	--pos: 0%;
 	background: linear-gradient(134deg, rgba(7, 22, 38, 0) -2.75%, #071626 100%)
 		var(--pos, 0%) / 200%;
-	transition: pos 0.3s ease-in-out, scale 0.3s ease-in-out;
+	transition: background 0.3s ease-in-out, scale 0.3s ease-in-out;
 }
 
 .Card:hover {

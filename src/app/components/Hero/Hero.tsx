@@ -3,6 +3,8 @@ import React from 'react';
 import { SkewedButton } from '../_globals/SkewedButton';
 import Image from 'next/image';
 import { HeroImg } from './HeroImg';
+import fortnite from '../../../../public/fortnite.png'
+// import fortnite from '@'
 
 export const Hero = () => {
 	return (
@@ -42,7 +44,7 @@ export const Hero = () => {
 							<Image
 								className='object-cover rounded desktop:rounded-[0.625rem]'
 								fill
-								src='/images/fortnite.png'
+								src={fortnite.src}
 								alt='Fortnite'
 								priority={true}
 							/>
