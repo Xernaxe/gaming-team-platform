@@ -28,7 +28,7 @@ export const Hero = () => {
 
 				{/* @TODO: CHANGE PX TO RESPONSIVE */}
 				<div className='flex justify-center flex-wrap gap-x-6 z-20 desktop:mt-[3%] desktop:h-[573px] desktop:overflow-hidden desktop:gap-x-7'>
-					<div className='flex flex-col gap-y-10 desktopL:gap-y-[3.5625rem]'>
+					<div className='w-screen flex flex-col mobile:w-auto mobile:gap-y-10 desktopL:gap-y-[3.5625rem]'>
 						<div className='relative w-[clamp(9.6875rem,_10vw,_15rem)] h-[10.5rem] tablet:w-[clamp(9.875rem,_20.1vw,_16.875rem)] tablet:h-[clamp(10.5rem,_21vw,_18.375rem)]'>
 							<Image
 								className='object-cover rounded desktop:rounded-[0.625rem]'
@@ -38,7 +38,7 @@ export const Hero = () => {
 								priority={true}
 							/>
 						</div>
-						<div className='relative w-[clamp(9.6875rem,_10vw,_15rem)] h-[10.5rem] tablet:w-[clamp(9.875rem,_20.1vw,_16.875rem)] tablet:h-[clamp(10.5rem,_21vw,_18.375rem)]'>
+						<div className='ml-auto -mb-14 -top-14 relative w-[clamp(9.6875rem,_10vw,_15rem)] h-[10.5rem] mobile:mb-0 mobile:top-0 tablet:w-[clamp(9.875rem,_20.1vw,_16.875rem)] tablet:h-[clamp(10.5rem,_21vw,_18.375rem)]'>
 							<Image
 								className='object-cover rounded desktop:rounded-[0.625rem]'
 								fill
@@ -48,7 +48,7 @@ export const Hero = () => {
 							/>
 						</div>
 					</div>
-					<div className='flex flex-col gap-y-10 mt-[0.875rem] desktop:mt-[1.6875rem] desktopL:gap-y-[3.5625rem]'>
+					<div className='hidden flex-col gap-y-10 mt-[0.875rem] mobile:flex desktop:mt-[1.6875rem] desktopL:gap-y-[3.5625rem]'>
 						<div className='relative w-[clamp(9.6875rem,_10vw,_15rem)] h-[10.5rem] tablet:w-[clamp(9.875rem,_20.1vw,_16.875rem)] tablet:h-[clamp(10.5rem,_21vw,_18.375rem)]'>
 							<Image
 								className='object-cover rounded desktop:rounded-[0.625rem]'

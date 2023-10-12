@@ -24,7 +24,7 @@ const config: Config = {
 				"greenCyan": "#00EEBD"
 			},
 			screens: {
-				"mobile": "440px",
+				"mobile": "375px",
 				"tablet": "768px",
 				"desktop": "1024px",
 				"desktopL": "1440px"
