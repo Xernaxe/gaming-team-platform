@@ -1,14 +1,14 @@
 import { createClient, groq } from 'next-sanity';
 
-export async function getNews() {
-	const client = createClient({
-		projectId: 'cue5e190',
-		dataset: 'production',
-		apiVersion: '2023-10-13',
-		useCdn: true,
-	});
+const client = createClient({
+	projectId: 'cue5e190',
+	dataset: 'production',
+	apiVersion: '2023-10-13',
+	useCdn: true,
+});
 
-	return client.fetch(groq`*[_type=="news"] | order(_createdAt asc)[0..3] {
+export async function getAllNews() {
+	return client.fetch(groq`*[_type=="news"] {
             _createdAt,
             _id,
             tag,
@@ -17,4 +17,17 @@ export async function getNews() {
             link,
             "imageUrl": image.asset->url
         }`);
+}
+
+export async function getNews(number: number) {
+	return client.fetch(groq`*[_type=="news"] | order(_createdAt asc)[0...${number}] {
+            _createdAt,
+            _id,
+            tag,
+            title,
+            overview,
+            link,
+            "imageUrl": image.asset->url
+    }
+    `);
 }

@@ -6,11 +6,13 @@ import { SkewedButton } from '../_globals/SkewedButton';
 import { INewsItems } from '../../_types/INewsItems';
 import { NewsCardDetails } from '../_globals/Card/NewsCardDetails';
 import { getNews } from '@/sanity/sanity-utils';
-
 export const revalidate = 20;
 
 export async function LatestNews() {
-	const newsItems: INewsItems[] = await getNews();
+	// home page should grab at most 4 news (tablet view)
+	const nrOfNews = 4;
+
+	const newsItems: INewsItems[] = await getNews(nrOfNews);
 	console.log(newsItems);
 	// const newsItems: INewsItems[] = [
 	// 	{
