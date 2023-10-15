@@ -1,6 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 import { INewsItems } from '../../../_types/INewsItems';
+import { getDateFromPosts } from '@/app/_helpers/helpers';
 
 export const NewsCardDetails = (newsItem: INewsItems) => {
 	return (
@@ -19,8 +20,8 @@ export const NewsCardDetails = (newsItem: INewsItems) => {
 						{newsItem.tag}
 					</h4>
 					<div className='w-1 h-1 bg-wGrey rounded-[50%]'></div>
-					<h4 className='text-sm font-medium uppercase text-wGrey tablet:text-base'>
-						{newsItem._createdAt}
+					<h4 className='text-sm font-medium text-wGrey tablet:text-base'>
+						{getDateFromPosts(newsItem._createdAt)}
 					</h4>
 				</div>
 				<h3 className='font-oxanium text-xl font-medium leading-[150%] desktopL:text-xl mt-[0.52rem] mb-[0.22rem] max-tablet:max-w-[18.375rem]'>
