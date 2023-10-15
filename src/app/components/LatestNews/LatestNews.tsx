@@ -13,7 +13,7 @@ export async function LatestNews() {
 	const nrOfNews = 4;
 
 	const newsItems: INewsItems[] = await getNews(nrOfNews);
-	console.log(newsItems);
+	// console.log(newsItems);
 	// const newsItems: INewsItems[] = [
 	// 	{
 	// 		imgSrc: 'news-item_1.png',

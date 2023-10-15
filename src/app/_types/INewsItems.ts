@@ -4,6 +4,6 @@ export type INewsItems = {
 	tag: string;
 	title: string;
 	overview: string;
-	link: string;
 	imageUrl: string;
+	slug: string;
 };

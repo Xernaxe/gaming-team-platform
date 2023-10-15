@@ -2,9 +2,11 @@ import { INewsItems } from '@/app/_types/INewsItems';
 import { Card } from '@/app/components/_globals/Card/Card';
 import { NewsCardDetails } from '@/app/components/_globals/Card/NewsCardDetails';
 import { SectionWrapper } from '@/app/components/_globals/SectionWrapper';
+import Link from 'next/link';
 import React from 'react';
 
 export const BlogContainer = ({ newsItems }: { newsItems: INewsItems[] }) => {
+	console.log(newsItems)
 	// const newsItems: INewsItems[] = [
 	// 	{
 	// 		imageUrl: '/news-item_1.png',
@@ -50,9 +52,11 @@ export const BlogContainer = ({ newsItems }: { newsItems: INewsItems[] }) => {
 				<div className='flex flex-col items-center w-full gap-6 mb-10 tablet:flex-wrap tablet:flex-row tablet:justify-center desktopL:gap-[29px]'>
 					{newsItems.map((newsItem) => {
 						return (
-							<Card key={newsItem._id}>
-								<NewsCardDetails {...newsItem} />
-							</Card>
+							<Link key={newsItem._id} href={`/blog/${newsItem.slug}`}>
+								<Card >
+									<NewsCardDetails {...newsItem} />
+								</Card>
+							</Link>
 						);
 					})}
 				</div>

@@ -34,10 +34,14 @@ const news = {
 			title: 'Image',
 		},
 		{
-			name: 'link',
-			type: 'string',
-			title: 'Link',
+			name: 'slug',
+			type: 'slug',
+			title: 'slug',
+			options: {
+				source: 'title',
+				maxLength: 40
+			},
 		},
 	],
 };
-export default news
+export default news;
