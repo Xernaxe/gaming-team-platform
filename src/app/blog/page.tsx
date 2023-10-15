@@ -1,8 +1,15 @@
+import { getNews } from '@/sanity/sanity-utils';
+import { BlogContainer } from './components/BlogContainer/BlogContainer';
+import { INewsItems } from '../_types/INewsItems';
 
-export default function Home() {
+
+
+export default async function Home() {
+
+	const newsItems: INewsItems[] = await getNews();
 	return (
-		<h1>
-            hello blog
-		</h1>
+		<>
+			<BlogContainer newsItems={newsItems} />
+		</>
 	);
 }

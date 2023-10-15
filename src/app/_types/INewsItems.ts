@@ -1,6 +1,9 @@
 export type INewsItems = {
-	imgSrc: string;
-	title: string;
+	_createdAt: string;
+	_id: string;
 	tag: string;
-	date: string;
+	title: string;
+	overview: string;
+	link: string;
+	imageUrl: string;
 };

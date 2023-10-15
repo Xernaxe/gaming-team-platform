@@ -4,6 +4,7 @@ import { SectionHeader } from '../_globals/SectionHeader';
 import { IShopItems } from '../../_types/IShopItems';
 import { Card } from '../_globals/Card/Card';
 import { SkewedButton } from '../_globals/SkewedButton';
+import { ShopCardDetails } from '../_globals/Card/ShopCardDetails';
 
 export const OurShop = () => {
 	const shopItems: IShopItems[] = [
@@ -39,8 +40,12 @@ export const OurShop = () => {
 
 			<div className='flex flex-col items-center'>
 				<div className='flex flex-col items-center w-full gap-6 mb-10 tablet:flex-wrap tablet:flex-row tablet:justify-center desktopL:gap-[29px]'>
-					{shopItems.map((shopItem, index) => {
-						return <Card key={index} {...shopItem} />;
+					{shopItems.map((shopItem) => {
+						return (
+							<Card key={shopItem.title} className='max-tablet:[&:nth-child(n+4)]:hidden desktopL:[&:nth-child(n+4)]:hidden'>
+								<ShopCardDetails {...shopItem} />
+							</Card>
+						);
 					})}
 				</div>
 

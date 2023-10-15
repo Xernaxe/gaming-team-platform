@@ -4,6 +4,7 @@ import { SectionHeader } from '../_globals/SectionHeader';
 import { SkewedButton } from '../_globals/SkewedButton';
 import { Card } from '../_globals/Card/Card';
 import { ITournaments } from '../../_types/ITournaments';
+import { TournamentCardDetails } from '../_globals/Card/TournamentCardDetails';
 
 export const Tournaments = () => {
 	const tournaments: ITournaments[] = [
@@ -62,8 +63,15 @@ export const Tournaments = () => {
 			<SectionHeader title='Tournaments' />
 			<div className='flex flex-col items-center'>
 				<div className='flex flex-col items-center w-full gap-6 mb-10 tablet:flex-wrap tablet:flex-row tablet:justify-center desktopL:gap-[29px]'>
-					{tournaments.map((tournament, index) => {
-						return <Card key={index} {...tournament} />;
+					{tournaments.map((tournament) => {
+						return (
+							<Card
+								key={tournament.title}
+								className='max-tablet:[&:nth-child(n+4)]:hidden max-desktopL:[&:nth-child(n+5)]:hidden'
+							>
+								<TournamentCardDetails {...tournament} />
+							</Card>
+						);
 					})}
 				</div>
 
