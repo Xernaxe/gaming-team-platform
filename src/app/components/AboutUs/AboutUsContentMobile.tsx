@@ -13,10 +13,10 @@ export const AboutUsContentMobile: React.FC<AboutUsContentMobileProps> = ({
 	return (
 		<>
 			<div className=' flex flex-col gap-6 mt-10 w-full tablet:w-[47%] tablet:mt-0 tablet:gap-8 desktop:flex-wrap desktop:flex-row desktop:hidden'>
-				{aboutTournaments.map((card, index) => {
+				{aboutTournaments.map((card) => {
 					return (
 						<AboutTournamentCard
-							key={index}
+							key={card.title}
 							title={card.title}
 							count={card.count}
 						/>

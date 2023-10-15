@@ -13,9 +13,9 @@ export const NavbarDesktop: React.FC<NavbarDesktopProps> = ({ navLinks }) => {
 	return (
 		<nav className='navbarDesktop | max-[1023px]:hidden flex items-center z-20 relative justify-start gap-0 desktopL:justify-center'>
 			<ul className='flex  gap-10 items-center justify-center desktopL:order-1 order-2 ml-auto mr-10 desktopL:m-0 desktopL:[flex-basis:38%] desktopL:justify-end'>
-				{navFirst3.map((link, index) => {
+				{navFirst3.map((link) => {
 					return (
-						<li key={index}>
+						<li key={link.name}>
 							<Link href={link.href}>
 								<p className=' text-center font-oxanium'>{link.name}</p>
 							</Link>
@@ -36,9 +36,9 @@ export const NavbarDesktop: React.FC<NavbarDesktopProps> = ({ navLinks }) => {
 				</Link>
 			</div>
 			<ul className='flex  items-center justify-center gap-10 desktop:order-3 desktopL:[flex-basis:38%] desktopL:justify-start'>
-				{navLast3.map((link, index) => {
+				{navLast3.map((link) => {
 					return (
-						<li key={index}>
+						<li key={link.name}>
 							<Link href={link.href}>
 								<p className=' text-center font-oxanium'>{link.name}</p>
 							</Link>

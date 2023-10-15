@@ -31,8 +31,8 @@ export const NavbarMobile: React.FC<NavbarMobileProps> = ({ navLinks }) => {
 				<>
 					<div className='absolute top-1/2 left-1/2 translate-y-1/2 -translate-x-1/2 z-50'>
 						<ul className='flex flex-col gap-6'>
-							{navLinks.map((link, index) => (
-								<li key={index}>
+							{navLinks.map((link) => (
+								<li key={link.name}>
 									<Link href={link.href}>
 										<p className=' text-center font-oxanium text-xl'>
 											{link.name}

@@ -28,9 +28,9 @@ export const ContactInfo = () => {
 
 	return (
 		<div className='flex w-full flex-col gap-6 py-8 px-3 mobile:p-8 bg-[linear-gradient(143deg,_#0A1F35_-12.02%,_#040D17_147.72%)] -skew-x-[1deg] tablet:flex-wrap tablet:flex-row tablet:justify-between tablet:px-[3.70rem] tablet:-skew-x-[3deg] desktop:content-start desktop:h-min desktop:w-auto desktop:gap-10'>
-			{infoItems.map((info, index) => {
+			{infoItems.map((info) => {
 				return (
-					<div className='flex flex-col gap-1 skew-x-[1deg] tablet:skew-x-[3deg]' key={index}>
+					<div className='flex flex-col gap-1 skew-x-[1deg] tablet:skew-x-[3deg]' key={info.title}>
 						<div className='flex gap-[0.88rem]'>
 							<Image
 								src={info.imgSrc}

@@ -35,9 +35,9 @@ export const Footer = () => {
 
 			<nav className='navbarDesktop | desktop:basis-2/3  desktop:skew-x-[2deg] desktopL:basis-[80%] desktopL:pl-[3vw]'>
 				<ul className='flex flex-col items-center gap-7 tablet:flex-row tablet:flex-wrap tablet:justify-center'>
-					{footerLinks.map((link, index) => {
+					{footerLinks.map((link) => {
 						return (
-							<li key={index}>
+							<li key={link.name}>
 								<Link href={link.href}>{link.name}</Link>
 							</li>
 						);
@@ -64,9 +64,9 @@ export const Footer = () => {
 			<div className='desktop:pl-[3vw] desktop:h-[150px]  desktop:skew-x-[2deg] desktopL:pl-[5vw]'>
 				<SectionHeader isFooter={true} title='Follow us' />
 				<ul className='flex gap-10'>
-					{socials.map((social, index) => {
+					{socials.map((social) => {
 						return (
-							<li key={index}>
+							<li key={social.alt}>
 								<Link href={social.href}>
 									<Image
 										src={`/images/${social.src}`}

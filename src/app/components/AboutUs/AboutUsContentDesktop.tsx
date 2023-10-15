@@ -13,10 +13,10 @@ export const AboutUsContentDesktop: React.FC<AboutUsContentDesktopProps> = ({
 	return (
 		<div className=' max-desktop:hidden w-[51vw]'>
 			<div className=' flex flex-wrap flex-row desktop:justify-between'>
-				{aboutTournaments.map((card, index) => {
+				{aboutTournaments.map((card) => {
 					return (
 						<AboutTournamentCard
-							key={index}
+							key={card.title}
 							title={card.title}
 							count={card.count}
 						/>
