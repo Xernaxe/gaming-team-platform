@@ -1,10 +1,8 @@
-import Link from 'next/link';
 import React from 'react';
 import { SkewedButton } from '../_globals/SkewedButton';
 import Image from 'next/image';
 import { HeroImg } from './HeroImg';
 import fortnite from '../../../../public/fortnite.png'
-// import fortnite from '@'
 
 export const Hero = () => {
 	return (

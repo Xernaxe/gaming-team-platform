@@ -21,7 +21,9 @@ const config: Config = {
 				"blueishGrey": "#A7B4C3",
 				"dBlue": "#0A1F35",
 				"wBlue": "#173352",
-				"greenCyan": "#00EEBD"
+				"greenCyan": "#00EEBD",
+				"postBg": "#0D151F",
+				"postAccent": "#212932"
 			},
 			screens: {
 				"mobile": "375px",

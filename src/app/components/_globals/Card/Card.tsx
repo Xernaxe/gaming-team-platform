@@ -11,7 +11,7 @@ export const Card = ({
 		<div
 			className={twMerge(
 				className,
-				'flex flex-col w-full justify-center rounded-[0.63rem] tablet:w-[48%]  desktopL:w-[23.125rem] '
+				'Card flex flex-col w-full justify-center rounded-[0.63rem] tablet:w-[48%]  desktopL:w-[23.125rem] '
 			)}
 		>
 			{children}
