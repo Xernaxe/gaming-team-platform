@@ -1,10 +1,10 @@
 import './globals.css';
 import type { Metadata } from 'next';
 import 'tailwindcss/tailwind.css';
-import { NavbarMobile } from './components/_globals/Header/Navbar/NavbarMobile';
 import { Header } from './components/_globals/Header/Header';
 import { BurgerMenuProvider } from './_providers/BurgermenuContext';
 import { Footer } from './components/_globals/Footer/Footer';
+import { TournamentBanner } from './components/Banner/TournamentBanner';
 
 export const metadata: Metadata = {
 	title: 'Create Next App',
@@ -23,6 +23,7 @@ export default function RootLayout({
 					<Header />
 					<main className='flex min-h-screen flex-col items-center'>
 						{children}
+						<TournamentBanner />
 					</main>
 					<Footer />
 				</body>
