@@ -19,6 +19,10 @@ body {
 	overflow-x: hidden;
 }
 
+section {
+	max-width: 1170px;
+}
+
 @media screen and (min-width: 768px) {
 	body {
 		padding: 1.25rem clamp(2.5rem, 5vw, 10.62rem);
@@ -71,7 +75,9 @@ body {
 	--pos: 0%;
 	background: linear-gradient(134deg, rgba(7, 22, 38, 0) -2.75%, #071626 100%)
 		var(--pos, 0%) / 200%;
-	transition: background 0.3s ease-in-out, scale 0.3s ease-in-out;
+	transition:
+		background 0.3s ease-in-out,
+		scale 0.3s ease-in-out;
 }
 
 .Card:hover {
@@ -91,4 +97,14 @@ body {
 .Banner:hover .BannerImg img,
 .Banner:hover .BannerImg div {
 	scale: 1.08;
+}
+
+@layer components {
+	.header-lined {
+		@apply flex items-center gap-2 relative z-20 tablet:w-fit tablet:bg-postBg tablet:px-2;
+	}
+
+	.passing-line {
+		@apply hidden h-[5px] w-full z-10 bg-[#212932] tablet:flex tablet:absolute tablet:top-1/2;
+	}
 }
