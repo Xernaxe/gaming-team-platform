@@ -19,7 +19,7 @@ body {
 	overflow-x: hidden;
 }
 
-section {
+section:not(.hero) {
 	max-width: 1170px;
 }
 
