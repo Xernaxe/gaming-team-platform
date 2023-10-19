@@ -19,8 +19,12 @@ body {
 	overflow-x: hidden;
 }
 
-section:not(.hero) {
+section:not(.hero), footer {
 	max-width: 1170px;
+}
+
+footer{
+	margin: auto;
 }
 
 @media screen and (min-width: 768px) {

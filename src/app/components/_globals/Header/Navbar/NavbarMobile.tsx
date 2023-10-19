@@ -17,7 +17,7 @@ export const NavbarMobile: React.FC<NavbarMobileProps> = ({ navLinks }) => {
 		<nav className='desktop:hidden flex justify-between relative items-center z-50'>
 			<Link href={'/'}>
 				<Image
-					src='./images/logo.svg'
+					src='/images/logo.svg'
 					className='w-[clamp(3.25rem,_10.5vw,_4.875rem)]'
 					width={78}
 					height={60}
