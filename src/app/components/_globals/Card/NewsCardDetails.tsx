@@ -6,7 +6,7 @@ import { getDateFromPosts } from '@/app/_helpers/helpers';
 export const NewsCardDetails = (newsItem: INewsItems) => {
 	return (
 		<>
-			<div className='relative h-[51.71vw] tablet:max-h-[25vw] desktop:max-h-[194px] w-full max-h-[250px] desktopL:w-[23.125rem]'>
+			<div className='relative h-[51.71vw] tablet:max-h-[25vw] desktop:max-h-[194px] w-full max-h-[250px]'>
 				<Image
 					src={newsItem.imageUrl}
 					alt=''

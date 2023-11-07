@@ -17,7 +17,7 @@ const BurgerMenu = () => {
 					width={32}
 					height={32}
 					className='w-[clamp(2rem,_5.3vw,_2.5rem)] h-[clamp(2rem,_5.3vw,_2.5rem)]'
-					src='./images/burgermenu.svg'
+					src='/images/burgermenu.svg'
 					alt='OPEN'
 					priority={true}
 				/>
@@ -26,7 +26,7 @@ const BurgerMenu = () => {
 				<Image
 					width={24}
 					height={24}
-					src='./images/closemenu.svg'
+					src='/images/closemenu.svg'
 					alt='CLOSE'
 					priority={true}
 				/>
