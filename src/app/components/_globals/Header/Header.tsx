@@ -5,12 +5,12 @@ import { NavbarDesktop } from './Navbar/NavbarDesktop';
 
 export const Header = () => {
 	const navLinks: INavLinks[] = [
-		{ name: 'Tournaments', href: '/tournaments' },
-		{ name: 'Our Team', href: '/team' },
-		{ name: 'Blog', href: '/blog' },
 		{ name: 'About Us', href: '/about' },
+		{ name: 'Tournaments', href: '/tournaments' },
+		{ name: 'Blog', href: '/blog' },
 		{ name: 'Shop', href: '/shop' },
 		{ name: 'Contact Us', href: '/contact' },
+		{ name: 'My Cart', href: '/contact' },
 	];
 
 	return (

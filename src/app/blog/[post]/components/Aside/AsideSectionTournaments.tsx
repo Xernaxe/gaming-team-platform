@@ -19,17 +19,17 @@ export const AsideSectionTournaments = ({
 			<div className='flex gap-[1.88rem] justify-evenly desktop:justify-start'>
 				<div className=''>
 					<p className='font-oxanium text-sm'>Play mode</p>
-					<p className='font-oxanium font-medium'>{'5V5'}</p>
+					<p className='font-oxanium font-medium text-greenCyan'>{'5V5'}</p>
 				</div>
 
 				<div className=''>
 					<p className='font-oxanium text-sm'>Platform</p>
-					<p className='font-oxanium font-medium'>{'Any'}</p>
+					<p className='font-oxanium font-medium text-greenCyan'>{'Any'}</p>
 				</div>
 
 				<div className=''>
 					<p className='font-oxanium text-sm'>Prize</p>
-					<p className='font-oxanium font-medium'>{`$${'50'}`}</p>
+					<p className='font-oxanium font-medium text-greenCyan'>{`$${'50'}`}</p>
 				</div>
 			</div>
 		</div>
