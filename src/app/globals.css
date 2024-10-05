@@ -19,11 +19,12 @@ body {
 	overflow-x: hidden;
 }
 
-section:not(.hero), footer {
+section:not(.hero),
+footer {
 	max-width: 1170px;
 }
 
-footer{
+footer {
 	margin: auto;
 }
 
